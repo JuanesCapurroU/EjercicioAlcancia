@@ -10,7 +10,7 @@ El programa debe permitir (1) agregar una moneda de una de las denominaciones in
  (2) contar cuántas monedas tiene de cada denominación, (3) calcular el total de dinero ahorrado,
   (4) romper la alcancía vaciando su contenid
 */
-    var veinte = 0;
+    /*var veinte = 0;
     var cincuenta = 0;
     var cien = 0;
     var docientos = 0;
@@ -79,5 +79,34 @@ El programa debe permitir (1) agregar una moneda de una de las denominaciones in
             }
         }
         }while (opcion != 5)
+        */
+
+        //AGREGAR NUMEROS ALEATORIOS
+         var numAleatorio = 0;
+        var opcionAleatorio = 0;
+    println("""
+        MENU
+        1. Generar un numero aleatorio
+    """.trimIndent())
+        opcionAleatorio = readln().toInt()
+        do {
+            when(opcionAleatorio)
+            {
+                1 -> {
+                    var min = 10;
+                    var max = 11;
+                    numAleatorio = (min..max).random()
+                    println(
+                        """
+                    numero aleatorio generado: $numAleatorio
+                """.trimIndent()
+                    )
+                }
+            }
+        }while (opcionAleatorio!=1)
+
+
+
+
 }
 
